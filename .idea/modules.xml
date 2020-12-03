@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/flutter_osc.iml" filepath="$PROJECT_DIR$/flutter_osc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flutter-osc.iml" filepath="$PROJECT_DIR$/.idea/modules/flutter-osc.iml" />
       <module fileurl="file://$PROJECT_DIR$/flutter_osc_android.iml" filepath="$PROJECT_DIR$/flutter_osc_android.iml" />
     </modules>
   </component>

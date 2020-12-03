@@ -6,7 +6,7 @@ import 'package:flutter_osc/util/DataUtils.dart';
 import 'package:flutter_osc/util/ThemeUtils.dart';
 import 'pages/NewsListPage.dart';
 import 'pages/TweetsListPage.dart';
-import 'pages/DiscoveryPage.dart';
+//import 'pages/DiscoveryPage.dart';
 import 'pages/MyInfoPage.dart';
 import './widgets/MyDrawer.dart';
 
@@ -50,7 +50,8 @@ class MyOSCClientState extends State<MyOSCClient> {
         themeColor = event.color;
       });
     });
-    pages = <Widget>[NewsListPage(), TweetsListPage(), DiscoveryPage(), MyInfoPage()];
+   // pages = <Widget>[NewsListPage(), TweetsListPage(), DiscoveryPage(), MyInfoPage()];
+    pages = <Widget>[NewsListPage(), TweetsListPage(), MyInfoPage()];
     if (tabImages == null) {
       tabImages = [
         [

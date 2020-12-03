@@ -31,8 +31,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd2fdf53-d104-4eca-8fd5-439747eda92e" name="Default" comment="update libs">
+      <change afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/settings_aar.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/java/com/yubo/flutterosc/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/java/com/yubo/flutterosc/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_osc.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_osc_android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_osc_android.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/DiscoveryPage.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,13 +71,23 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[V3HBB18727515751]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
         <task path="$PROJECT_DIR$/android/build.gradle">
           <activation />
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -81,15 +119,16 @@
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GDG-DevFest-App" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin" />
+    <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace-android\flutter-osc" />
       <recent name="$PROJECT_DIR$/android" />
       <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/lib" />
@@ -113,6 +152,13 @@
     </configuration>
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -159,7 +205,24 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/android/build.gradle" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--stacktrace" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="D:/workspace-android/flutter-osc/android/build.gradle (4)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/android/build.gradle" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -188,23 +251,6 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="D:/workspace-android/flutter-osc/android/build.gradle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/android/build.gradle" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -216,11 +262,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.D:/workspace-android/flutter-osc/android/build.gradle" />
-        <item itemvalue="Gradle.D:/workspace-android/flutter-osc/android/build.gradle (5)" />
         <item itemvalue="Gradle.D:/workspace-android/flutter-osc/android/build.gradle (3)" />
         <item itemvalue="Gradle.D:/workspace-android/flutter-osc/android/build.gradle (2)" />
         <item itemvalue="Gradle.D:/workspace-android/flutter-osc/android/build.gradle (1)" />
+        <item itemvalue="Gradle.D:/workspace-android/flutter-osc/android/build.gradle (5)" />
+        <item itemvalue="Gradle.D:/workspace-android/flutter-osc/android/build.gradle (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -260,6 +306,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="102" y="34" key="#PSD/0.0.1366.728@0.0.1366.728" timestamp="1606295733646" />
+    <state x="406" y="164" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606478161743">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="406" y="164" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1606478161743" />
     <state x="92" y="92" width="1182" height="544" key="AVDManager" timestamp="1606391615209">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -268,37 +318,41 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="486" y="109" key="AndroidProcessChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1606292254665" />
-    <state x="647" y="126" key="FileChooserDialogImpl" timestamp="1606390439622">
+    <state x="647" y="126" key="FileChooserDialogImpl" timestamp="1606473970261">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="647" y="126" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606390439622" />
-    <state width="1306" height="88" key="GridCell.Tab.0.bottom" timestamp="1606391835078">
+    <state x="647" y="126" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606473970261" />
+    <state width="1306" height="219" key="GridCell.Tab.0.bottom" timestamp="1606979516808">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="88" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606391835078" />
-    <state width="1306" height="88" key="GridCell.Tab.0.center" timestamp="1606391835078">
+    <state width="1306" height="219" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606979516808" />
+    <state width="1306" height="219" key="GridCell.Tab.0.center" timestamp="1606979516807">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="88" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1606391835078" />
-    <state width="1306" height="88" key="GridCell.Tab.0.left" timestamp="1606391835077">
+    <state width="1306" height="219" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1606979516807" />
+    <state width="1306" height="219" key="GridCell.Tab.0.left" timestamp="1606979516807">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="88" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1606391835077" />
-    <state width="1306" height="88" key="GridCell.Tab.0.right" timestamp="1606391835078">
+    <state width="1306" height="219" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1606979516807" />
+    <state width="1306" height="219" key="GridCell.Tab.0.right" timestamp="1606979516807">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="88" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1606391835078" />
-    <state x="54" y="0" key="SettingsEditor" timestamp="1606391614802">
+    <state width="1306" height="219" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1606979516807" />
+    <state x="54" y="0" key="SettingsEditor" timestamp="1606545955004">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="54" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1606391614802" />
+    <state x="54" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1606545955004" />
+    <state x="100" y="100" width="1166" height="528" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606478807873">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="100" y="100" width="1166" height="528" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1606478807873" />
     <state x="477" y="276" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606292396464">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="477" y="276" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1606292396464" />
-    <state x="257" y="0" width="598" height="728" key="find.popup" timestamp="1606273169370">
+    <state x="257" y="0" width="709" height="728" key="find.popup" timestamp="1606443475047">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="257" y="0" width="598" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1606273169370" />
+    <state x="257" y="0" width="709" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1606443475047" />
   </component>
 </project>
