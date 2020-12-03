@@ -6,7 +6,7 @@ import 'package:flutter_osc/util/DataUtils.dart';
 import 'package:flutter_osc/util/ThemeUtils.dart';
 import 'pages/NewsListPage.dart';
 import 'pages/TweetsListPage.dart';
-//import 'pages/DiscoveryPage.dart';
+import 'pages/DiscoveryPage.dart';
 import 'pages/MyInfoPage.dart';
 import './widgets/MyDrawer.dart';
 
