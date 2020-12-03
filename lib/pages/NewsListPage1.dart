@@ -72,7 +72,7 @@ class NewsListPageState extends State<NewsListPage> {
   // 从网络获取数据，isLoadMore表示是否是加载更多数据
   getNewsList(bool isLoadMore) {
     String url = Api.newsList;
-   // url += "?pageIndex=$curPage&pageSize=10";
+    url += "?pageIndex=$curPage&pageSize=10";
     NetUtils.get(url).then((data) {
       if (data != null) {
         // 将接口返回的json字符串解析为map类型
