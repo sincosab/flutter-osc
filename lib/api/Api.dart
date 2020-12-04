@@ -2,8 +2,8 @@ class Api {
   static final String host = "https://www.oschina.net";
 
   // 资讯列表
-  static final String newsList = "https://www.toutiao.com/api/search/content/?aid=24&app_name=web_search&offset=0&format=json&keyword=%E6%96%B0%E5%86%A0&autoload=true&count=5";
-// static final String newsList = "http://osc.yubo.me/news/list";
+  static final String newsList = "http://10.0.2.2:8080/crawlData/list";
+// static final String newsList = "http://osc.yubo.me/news/list";h
   // 资讯详情
   static final String newsDetail = host + "/action/openapi/news_detail";
 

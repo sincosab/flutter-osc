@@ -55,9 +55,9 @@ class SlideViewState extends State<SlideView>
     if (slideData != null && slideData.length > 0) {
       for (var i = 0; i < slideData.length; i++) {
         var item = slideData[i];
-        var imgUrl = item['imgUrl'];
+        var imgUrl = item['site'];
         var title = item['title'];
-        var detailUrl = item['detailUrl'];
+        var detailUrl = item['url'];
         items.add(GestureDetector(
           onTap: () {
             // 点击跳转到详情

@@ -72,19 +72,18 @@ class NewsListPageState extends State<NewsListPage> {
   // 从网络获取数据，isLoadMore表示是否是加载更多数据
   getNewsList(bool isLoadMore) {
     String url = Api.newsList;
-   // url += "?pageIndex=$curPage&pageSize=10";
     NetUtils.get(url).then((data) {
       if (data != null) {
         // 将接口返回的json字符串解析为map类型
         Map<String, dynamic> map = json.decode(data);
-        if (map['code'] == 0) {
+        if (map['code'] == 200) {
           // code=0表示请求成功
-          var msg = map['msg'];
+          var msg = map['data'];
           // total表示资讯总条数
-          listTotalSize = msg['news']['total'];
+          listTotalSize = msg['total'];
           // data为数据内容，其中包含slide和news两部分，分别表示头部轮播图数据，和下面的列表数据
-          var _listData = msg['news']['data'];
-          var _slideData = msg['slide'];
+          var _listData = msg['list'];
+          var _slideData = msg['list'];
           setState(() {
             if (!isLoadMore) {
               // 不是加载更多，则直接为变量赋值
