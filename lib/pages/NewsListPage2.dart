@@ -72,7 +72,6 @@ class NewsListPageState extends State<NewsListPage> {
   // 从网络获取数据，isLoadMore表示是否是加载更多数据
   getNewsList(bool isLoadMore) {
     String url = Api.newsList;
-    url += "?pageNum=$curPage&pageSize=10&encoding=utf-8";
     NetUtils.get(url).then((data) {
       if (data != null) {
         // 将接口返回的json字符串解析为map类型
@@ -157,7 +156,8 @@ class NewsListPageState extends State<NewsListPage> {
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             color: const Color(0xFFECECEC),
-
+            image: DecorationImage(
+                image: NetworkImage(itemData['authorImg']), fit: BoxFit.cover),
             border: Border.all(
               color: const Color(0xFFECECEC),
               width: 2.0,
@@ -167,7 +167,7 @@ class NewsListPageState extends State<NewsListPage> {
         Padding(
           padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
           child: Text(
-            itemData['publishTime'],
+            itemData['timeStr'],
             style: subtitleStyle,
           ),
         ),
@@ -176,14 +176,47 @@ class NewsListPageState extends State<NewsListPage> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
-              Text("${itemData['site']}", style: subtitleStyle),
+              Text("${itemData['commCount']}", style: subtitleStyle),
               Image.asset('./images/ic_comment.png', width: 16.0, height: 16.0),
             ],
           ),
         )
       ],
     );
-
+    var thumbImgUrl = itemData['thumb'];
+    var thumbImg = Container(
+      margin: const EdgeInsets.all(10.0),
+      width: 60.0,
+      height: 60.0,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: const Color(0xFFECECEC),
+        image: DecorationImage(
+            image: ExactAssetImage('./images/ic_img_default.jpg'),
+            fit: BoxFit.cover),
+        border: Border.all(
+          color: const Color(0xFFECECEC),
+          width: 2.0,
+        ),
+      ),
+    );
+    if (thumbImgUrl != null && thumbImgUrl.length > 0) {
+      thumbImg = Container(
+        margin: const EdgeInsets.all(10.0),
+        width: 60.0,
+        height: 60.0,
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          color: const Color(0xFFECECEC),
+          image: DecorationImage(
+              image: NetworkImage(thumbImgUrl), fit: BoxFit.cover),
+          border: Border.all(
+            color: const Color(0xFFECECEC),
+            width: 2.0,
+          ),
+        ),
+      );
+    }
     var row = Row(
       children: <Widget>[
         Expanded(
@@ -201,14 +234,24 @@ class NewsListPageState extends State<NewsListPage> {
             ),
           ),
         ),
-
+        Padding(
+          padding: const EdgeInsets.all(6.0),
+          child: Container(
+            width: 100.0,
+            height: 80.0,
+            color: const Color(0xFFECECEC),
+            child: Center(
+              child: thumbImg,
+            ),
+          ),
+        )
       ],
     );
     return InkWell(
       child: row,
       onTap: () {
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (ctx) => NewsDetailPage(id: itemData['url'])
+          builder: (ctx) => NewsDetailPage(id: itemData['detailUrl'])
         ));
       },
     );

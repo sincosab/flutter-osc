@@ -66,8 +66,6 @@ class SlideViewState extends State<SlideView>
           },
           child: Stack(
             children: <Widget>[
-              Image.network(imgUrl,
-                  width: MediaQuery.of(context).size.width, fit: BoxFit.cover),
               Container(
                   width: MediaQuery.of(context).size.width,
                   color: const Color(0x50000000),

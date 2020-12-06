@@ -85,7 +85,7 @@ class MyDrawer extends StatelessWidget {
           getIconImage(menuIcons[index]),
           // 菜单item的文本，需要
           Expanded(
-            child: Text(
+             child: Text(
               menuTitles[index],
               style: menuStyle,
             )

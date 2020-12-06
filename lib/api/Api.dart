@@ -2,7 +2,10 @@ class Api {
   static final String host = "https://www.oschina.net";
 
   // 资讯列表
-  static final String newsList = "http://10.0.2.2:8080/crawlData/list";
+//  static final String newsList = "http://10.0.2.2:8080/crawlData/list";
+ // http://localhost:8080/crawlData/list
+  static final String newsList = "http://192.168.3.2:8080/crawlData/list";
+ // static final String newsList = "https://baijiahao.baidu.com/s?id=1685318585015180471&wfr=spider&for=pc";
 // static final String newsList = "http://osc.yubo.me/news/list";h
   // 资讯详情
   static final String newsDetail = host + "/action/openapi/news_detail";

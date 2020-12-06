@@ -27,6 +27,9 @@ class NetUtils {
   static Map<String, String> getCommonHeader() {
     Map<String, String> header = Map();
     header['is_flutter_osc'] = "1";
+    header['content-type'] = "text/html;charset=utf-8";
+
+
     return header;
   }
 }

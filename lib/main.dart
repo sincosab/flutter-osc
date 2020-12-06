@@ -50,8 +50,8 @@ class MyOSCClientState extends State<MyOSCClient> {
         themeColor = event.color;
       });
     });
-   // pages = <Widget>[NewsListPage(), TweetsListPage(), DiscoveryPage(), MyInfoPage()];
-    pages = <Widget>[NewsListPage(), TweetsListPage(), MyInfoPage()];
+    pages = <Widget>[NewsListPage(), TweetsListPage(), DiscoveryPage(), MyInfoPage()];
+   // pages = <Widget>[NewsListPage(), TweetsListPage(), MyInfoPage()];
     if (tabImages == null) {
       tabImages = [
         [
