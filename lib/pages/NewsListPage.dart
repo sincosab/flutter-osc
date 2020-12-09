@@ -8,6 +8,8 @@ import '../widgets/SlideView.dart';
 import '../pages/NewsDetailPage.dart';
 import '../widgets/CommonEndLine.dart';
 import '../widgets/SlideViewIndicator.dart';
+import 'SearchBarDelegate.dart';
+//import 'SearchBarDelegate.dart';
 
 final slideViewIndicatorStateKey = GlobalKey<SlideViewIndicatorState>();
 
@@ -19,7 +21,8 @@ class NewsListPage extends StatefulWidget {
 class NewsListPageState extends State<NewsListPage> {
   final ScrollController _controller = ScrollController();
   final TextStyle titleTextStyle = TextStyle(fontSize: 15.0);
-  final TextStyle subtitleStyle = TextStyle(color: const Color(0xFFB5BDC0), fontSize: 12.0);
+  final TextStyle subtitleStyle =
+      TextStyle(color: const Color(0xFFB5BDC0), fontSize: 12.0);
 
   var listData;
   var slideData;
@@ -54,9 +57,20 @@ class NewsListPageState extends State<NewsListPage> {
   Widget build(BuildContext context) {
     // 无数据时，显示Loading
     if (listData == null) {
-      return Center(
-        // CircularProgressIndicator是一个圆形的Loading进度条
-        child: CircularProgressIndicator(),
+      // TODO: implement build
+      return Scaffold(
+        appBar: AppBar(
+          title: Text("searchDemo"),
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.search),
+              onPressed: () {
+                showSearch(
+                    context: context, delegate: SearchBarDelegateState());
+              },
+            )
+          ],
+        ),
       );
     } else {
       // 有数据，显示ListView
@@ -114,24 +128,24 @@ class NewsListPageState extends State<NewsListPage> {
   }
 
   void initSlider() {
-    indicator = SlideViewIndicator(slideData.length, key: slideViewIndicatorStateKey);
+    indicator =
+        SlideViewIndicator(slideData.length, key: slideViewIndicatorStateKey);
     slideView = SlideView(slideData, indicator, slideViewIndicatorStateKey);
   }
 
   Widget renderRow(i) {
     if (i == 0) {
       return Container(
-        height: 180.0,
-        child: Stack(
-          children: <Widget>[
-            slideView,
-            Container(
-              alignment: Alignment.bottomCenter,
-              child: indicator,
-            )
-          ],
-        )
-      );
+          height: 180.0,
+          child: Stack(
+            children: <Widget>[
+              slideView,
+              Container(
+                alignment: Alignment.bottomCenter,
+                child: indicator,
+              )
+            ],
+          ));
     }
     i -= 1;
     if (i.isOdd) {
@@ -157,7 +171,6 @@ class NewsListPageState extends State<NewsListPage> {
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             color: const Color(0xFFECECEC),
-
             border: Border.all(
               color: const Color(0xFFECECEC),
               width: 2.0,
@@ -201,15 +214,13 @@ class NewsListPageState extends State<NewsListPage> {
             ),
           ),
         ),
-
       ],
     );
     return InkWell(
       child: row,
       onTap: () {
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (ctx) => NewsDetailPage(id: itemData['url'])
-        ));
+            builder: (ctx) => NewsDetailPage(id: itemData['url'])));
       },
     );
   }
