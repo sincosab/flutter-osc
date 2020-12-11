@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_osc/constants/Constants.dart';
 import 'package:flutter_osc/events/ChangeThemeEvent.dart';
+import 'package:flutter_osc/pages/search_page.dart';
 import 'package:flutter_osc/util/DataUtils.dart';
 import 'package:flutter_osc/util/ThemeUtils.dart';
 import 'pages/NewsListPage.dart';
@@ -20,7 +21,7 @@ class MyOSCClient extends StatefulWidget {
 }
 
 class MyOSCClientState extends State<MyOSCClient> {
-  final appBarTitles = ['搜索', '订阅', '发现', '我的'];
+  final appBarTitles = ['搜索', '关注', '发现', '我的'];
   final tabTextStyleSelected = TextStyle(color: const Color(0xff63ca6c));
   final tabTextStyleNormal = TextStyle(color: const Color(0xff969696));
 
@@ -50,7 +51,10 @@ class MyOSCClientState extends State<MyOSCClient> {
         themeColor = event.color;
       });
     });
-    pages = <Widget>[NewsListPage(), TweetsListPage(), DiscoveryPage(), MyInfoPage()];
+    //pages = <Widget>[NewsListPage(), TweetsListPage(), DiscoveryPage(), MyInfoPage()];
+    pages = <Widget>[SearchPage(), TweetsListPage(), DiscoveryPage(), MyInfoPage()];
+
+
    // pages = <Widget>[NewsListPage(), TweetsListPage(), MyInfoPage()];
     if (tabImages == null) {
       tabImages = [
@@ -103,11 +107,11 @@ class MyOSCClientState extends State<MyOSCClient> {
           primaryColor: themeColor
       ),
       home: Scaffold(
-        appBar: AppBar(
+     /*   appBar: AppBar(
           title: Text(appBarTitles[_tabIndex],
           style: TextStyle(color: Colors.white)),
           iconTheme: IconThemeData(color: Colors.white)
-        ),
+        ),*/
         body: _body,
         bottomNavigationBar: CupertinoTabBar(
           items: <BottomNavigationBarItem>[
