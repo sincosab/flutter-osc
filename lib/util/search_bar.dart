@@ -158,11 +158,12 @@ class _SearchBarState extends State<SearchBar> {
                       onChanged: _onChanged,
                       autofocus: widget.autofocus,
                       style: TextStyle(
+
                           fontSize: 18,
                           color: Colors.black,
                           fontWeight: FontWeight.w300),
                       decoration: InputDecoration(
-                          contentPadding: EdgeInsets.fromLTRB(5, 0, 5, 13),
+                          contentPadding: EdgeInsets.fromLTRB(5, 0, 5, 10),
                          // contentPadding: EdgeInsets.all(10),//.fromLTRB(5, 0, 5, 10),
                           border: InputBorder.none,
                           hintText: widget.hint ?? '',
@@ -172,7 +173,7 @@ class _SearchBarState extends State<SearchBar> {
                       Container(
                         child: Text(
                           widget.defaultText,
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
+                          style: TextStyle(fontSize: 13, color: Colors.white),
                         ),
                       ),
                       widget.inputBoxClick)),

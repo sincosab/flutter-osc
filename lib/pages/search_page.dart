@@ -7,10 +7,6 @@ import 'package:flutter_osc/util/navigator_util.dart';
 import 'package:flutter_osc/util/search_bar.dart';
 import 'package:flutter_osc/widgets/webview.dart';
 
-
-
-
-
 const TYPES = [
   'channelgroup',
   'gs',
@@ -26,7 +22,7 @@ const TYPES = [
   'ticket',
   'travelgroup'
 ];
-const SEARCH_BAR_DEFAULT_TEXT = '网红打卡地 景点 酒店 美食';
+const SEARCH_BAR_DEFAULT_TEXT = '';
 
 ///搜索页面
 class SearchPage extends StatefulWidget {
@@ -87,6 +83,7 @@ class _SearchPageState extends State<SearchPage> {
     return Scaffold(
       body: Column(
         children: <Widget>[
+          logo,
           _appBar,
           MediaQuery.removePadding(
               removeTop: true,
@@ -103,6 +100,12 @@ class _SearchPageState extends State<SearchPage> {
       ),
     );
   }
+
+  //自定义logo
+  Widget logo = new Container(
+    margin: const EdgeInsets.only(top: 28.0),
+    child: new Image.asset('images/ic_osc_logo.png'),
+  );
 
   //自定义导航
   Widget get _appBar {
@@ -124,7 +127,7 @@ class _SearchPageState extends State<SearchPage> {
               defaultText: widget.keyword,
               hint: widget.hint ?? SEARCH_BAR_DEFAULT_TEXT,
               leftButtonClick: () {
-               // Navigator.pop(context);
+                // Navigator.pop(context);
               },
               onChanged: _onTextChange,
               speakClick: _jumpToSpeak,
